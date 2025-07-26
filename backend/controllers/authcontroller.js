@@ -2,7 +2,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
-//Login endpoint
+//Login endpoint logic
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
