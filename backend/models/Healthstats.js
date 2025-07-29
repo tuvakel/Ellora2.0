@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const healthStatsSchema = new mongoose.Schema({
+const healthstatsSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
     steps: { type: Number, required: true },
     heartRate: { type: Number, required: true }, 
@@ -8,4 +8,4 @@ const healthStatsSchema = new mongoose.Schema({
     date: { type: Date, required: true }
 }, { timestamps: true });
 
-module.exports = mongoose.model("healthStats", healthStatsSchema)
+module.exports = mongoose.model("healthstats", healthstatsSchema)
